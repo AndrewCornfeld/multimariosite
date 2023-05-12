@@ -20,6 +20,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+    path('', lambda request: redirect('multimario/', permanent=True)),
     path("multimario/", include("multimario.urls")),
     path("admin/", admin.site.urls),
 ]
