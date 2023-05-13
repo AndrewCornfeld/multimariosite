@@ -1,9 +1,14 @@
 from django.http import HttpResponse
+from django.contrib.auth import logout
+from django.shortcuts import render, redirect
 
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+def home(request):
+    return render(request, 'multimario/home.html')
 
+def logout_view(request):
+    logout(request)
+    return redirect("/")
 
 
 
