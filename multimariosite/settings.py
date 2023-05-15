@@ -37,7 +37,7 @@ ALLOWED_HOSTS = ['*']
 
 # Application definition
 
-SITE_ID=1
+SITE_ID=2
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -153,10 +153,12 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 AUTHENTICATION_BACKENDS = (
     "django.contrib.auth.backends.ModelBackend",
-    "allauth.accounts.auth_backends.AuthenticationBackend"
+    "allauth.account.auth_backends.AuthenticationBackend"
 )
 
-LOGIN_DIRECT_URL = "/"
-LOGOUT_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/multimario/"
