@@ -10,6 +10,7 @@ def logout_view(request):
     logout(request)
     return redirect("/")
 
-
+#def create(response):
+    #return render(response, 'multimario/create.html')
 
 # Create your views here.
