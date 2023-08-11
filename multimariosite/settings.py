@@ -109,8 +109,11 @@ DATABASES = {
 import dj_database_url
 
 DATABASES = {
-    'default': dj_database_url.parse(env('DATABASE_URL'))
+    'default': dj_database_url.parse("postgres://multimariodatabase811_user:BnhjeBdYZ313O78FkGhRSYENmru74HeM@dpg-cjbau6rbq8nc73djpi70-a.ohio-postgres.render.com/multimariodatabase811")
 }
+
+# 'default': dj_database_url.parse(env('DATABASE_URL'))
+# postgres://multimariodatabase811_user:BnhjeBdYZ313O78FkGhRSYENmru74HeM@dpg-cjbau6rbq8nc73djpi70-a.ohio-postgres.render.com/multimariodatabase811
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
