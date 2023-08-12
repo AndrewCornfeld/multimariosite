@@ -23,3 +23,7 @@ def glossary(request):
 # return render(response, 'multimario/create.html')
 
 # Create your views here.
+
+
+def index(request, *args, **kwargs):
+    return render(request, 'frontend/index.html')
