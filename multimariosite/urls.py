@@ -19,7 +19,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('', lambda request: redirect('multimario/', permanent=True)),
+    path('', include('frontend.urls')),
     path("glossary/", include("multimario.urls")),
     path("upcomingraces/", include("multimario.urls")),
     path("multimario/", include("multimario.urls")),

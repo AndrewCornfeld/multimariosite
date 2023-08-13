@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "multimario",
     "allauth",
+    "frontend",
     "allauth.account",
     "allauth.socialaccount",
     "allauth.socialaccount.providers.google"
