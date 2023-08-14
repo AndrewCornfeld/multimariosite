@@ -25,5 +25,6 @@ urlpatterns = [
     path("multimario/", include("multimario.urls")),
     path("admin/", admin.site.urls),
     path("accounts/", include("allauth.urls")),
+    path("auth/", include("users.urls"))
 
 ]

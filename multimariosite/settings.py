@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     "frontend",
     "allauth.account",
     "allauth.socialaccount",
-    "allauth.socialaccount.providers.google"
+    "allauth.socialaccount.providers.google",
+    "users",
 ]
 
 SOCIALACCOUNT_PROVIDERS = {

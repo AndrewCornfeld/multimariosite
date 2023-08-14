@@ -16,6 +16,7 @@ render() {
         <a href="/multimario">Community Events</a>
         <a href="/multimario">Past Races Archive</a>
         <a href="/multimario/glossary">Glossary</a>
+        <a href="/login">Login</a>
     </div>
 </body>
 </html>
